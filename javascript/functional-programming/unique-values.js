@@ -3,6 +3,8 @@ const array = [1, 2, 2, 3, 4, 4, 5];
 // Set automatically removes duplicates
 const uniqueValuesBySet = [...new Set(array)];
 console.log(uniqueValuesBySet); // Output: [1, 2, 3, 4, 5]
+console.log(array); // Original array remains unchanged
+
 // Explanation:
 // Step 1: Create a Set from the array, which removes duplicate values.
 // Step 2: Spread the Set back into an array using the spread operator [...]
