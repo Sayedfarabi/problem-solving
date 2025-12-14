@@ -17,12 +17,12 @@ const getLength = <T extends HasLength>(data: T): number => {
 };
 
 // const result = getLength([1, 2, 3]);
-// const result = getLength("Sayed Hasan Farabi");
-const result = getLength({
-  id: 1,
-  name: "Abu",
-  email: "abu@gmail.com",
-  phone: "017858585858",
-  length: 5,
-});
+const result = getLength("Sayed Hasan Farabi");
+// const result = getLength({
+//   id: 1,
+//   name: "Abu",
+//   email: "abu@gmail.com",
+//   phone: "017858585858",
+//   length: 5,
+// });
 console.log(result);
