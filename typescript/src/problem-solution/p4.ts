@@ -12,6 +12,7 @@
 // userCache.set("u1", { id: 1, name: "Alice" });
 
 class Cache<T> {
+  constructor() {}
   private map = new Map<string, T>();
   public set(id: string, data: T): void {
     this.map.set(id, data);
