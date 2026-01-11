@@ -82,3 +82,16 @@ const generateGroup = (array) => {
 
 const result = generateGroup(expenses);
 // console.log(result);
+
+// const generateGroup2 = (array) => {
+//   const grouped = array.reduce((acc, curr) => {
+//     const category = curr.category;
+//     if (!acc[category]) acc[category] = curr.amount;
+//     else acc[category] += curr.amount;
+//     return acc;
+//   }, {});
+//   return Object.keys(grouped).map((category) => ({
+//     category,
+//     total: grouped[category],
+//   }));
+// };
