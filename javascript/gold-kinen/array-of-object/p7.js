@@ -95,3 +95,24 @@ const result = generateGroup(expenses);
 //     total: grouped[category],
 //   }));
 // };
+
+const generateGroupByMap = (array) => {
+  const map = new Map();
+
+  array.forEach((item) => {
+    const category = item.category;
+    const amount = item.amount;
+    if (map.has(category)) {
+      map.set(category, map.get(category) + amount);
+    } else {
+      map.set(category, amount);
+    }
+  });
+
+  return Array.from(map.entries()).map(([category, total]) => ({
+    category,
+    total,
+  }));
+};
+console.log(generateGroupByMap(expenses));
+console.log(result);
